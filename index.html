@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lorem Grid</title>
+    <title>Latitude vs. X</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -44,14 +44,40 @@
           </ul>
         </div>
       </nav> 
-      <h1>
-          This is the Main Page - Add In a Paragraph of Description
-      </h1> 
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>
+                  Weather data, collected from OWM (Open Weather Map), was analyzed for over 
+                  500 random cities around the world.  Data on maximum temperature, humidity, cloudiness,
+                  and wind speed was plotted against the latitude of each city.  No clear trends were 
+                  discovered when this data analyzed.  The cities were then divided into those in the northern
+                  hemisphere and those in the southern hemisphere.  Four plots are discussed here: northern
+                  hemisphere latitude vs maximum temperature, southern hemisphere latitude vs maximum temperature,
+                  northern hemisphere latitude vs humidity, and southern hemiphere latitude vs humidity.
+              </p>          
+            </div>  
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <a target="_blank" href="https://allysontalyor.github.io/Web-Design-Challenge/northern_temp.html">
-                <img src="./WebVisualizations/visualizations/southern_lat_temp.png" alt="Northern Hemisphere Laitude vs Max Temp">
+                <img style= "width: 110%; height: 110%"src="./WebVisualizations/visualizations/norther_lat_temp.png" alt="Northern Hemisphere Laitude vs Max Temp">
+                </a>            
+          </div>  
+          <div class="col-md-3">
+            <a target="_blank" href="https://allysontalyor.github.io/Web-Design-Challenge/southern_temp.html">
+                <img style= "width: 110%; height: 110%" src="./WebVisualizations/visualizations/southern_lat_temp.png" alt="Southern Hemisphere Laitude vs Max Temp">
+                </a>            
+          </div> 
+          <div class="col-md-3">
+            <a target="_blank" href="https://allysontalyor.github.io/Web-Design-Challenge/northern_humid.html">
+                <img style= "width: 110%; height: 110%" src="./WebVisualizations/visualizations/northern_lat_humid.png" alt="Northern Hemisphere Laitude vs Humidity">
+                </a>            
+          </div> 
+          <div class="col-md-3">
+            <a target="_blank" href="https://allysontalyor.github.io/Web-Design-Challenge/southern_humid.html">
+                <img style= "width: 110%; height: 110%" src="./WebVisualizations/visualizations/southern_lat_humid.png" alt="Southern Hemisphere Laitude vs Humidity">
                 </a>            
           </div> 
         </div>
